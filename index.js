@@ -19,7 +19,8 @@ const razorpayRoutes = require("./routes/razorpayRoutes")
 
 
 //DB  Connection
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect("mongodb+srv://mern:mern@cluster0.q268o.mongodb.net/Ecommerce?retryWrites=true&w=majority", {
+    // process.env.DATABASE, {
     useNewUrlParser : true,
     useUnifiedTopology:true, 
     useCreateIndex:true,
