@@ -39,14 +39,14 @@ app.use(cookieParser());
 app.use(cors());
 
 //My Routes
-app.use("/api", authRoutes);
-app.use("/api", userRoutes);
-app.use("/api", categoryRoutes);
-app.use("/api", productRoutes);
-app.use("/api", orderRoutes);
-app.use("/api", stripeRoutes);
-app.use("/api", paymentRoutes);
-app.use("/api", razorpayRoutes);
+app.use("https://eco-bend.herokuapp.com/", authRoutes);
+app.use("https://eco-bend.herokuapp.com/", userRoutes);
+app.use("https://eco-bend.herokuapp.com/", categoryRoutes);
+app.use("https://eco-bend.herokuapp.com/", productRoutes);
+app.use("https://eco-bend.herokuapp.com/", orderRoutes);
+app.use("https://eco-bend.herokuapp.com/", stripeRoutes);
+app.use("https://eco-bend.herokuapp.com/", paymentRoutes);
+app.use("https://eco-bend.herokuapp.com/", razorpayRoutes);
 
 //Port
 const port = process.env.PORT || 8000;
