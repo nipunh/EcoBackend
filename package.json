@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-
   "author": "Nipun",
   "license": "ISC",
   "dependencies": {
@@ -30,8 +29,7 @@
     "stripe": "^8.52.0",
     "uuid": "^7.0.3"
   },
-
   "engines": {
-    "node" : "15.6.0"
+    "node": "15.6.0"
   }
 }
