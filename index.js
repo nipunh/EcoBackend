@@ -24,6 +24,7 @@ mongoose.connect("mongodb+srv://mern:mern@cluster0.q268o.mongodb.net/Ecommerce?r
     useNewUrlParser : true,
     useUnifiedTopology:true, 
     useCreateIndex:true,
+    
 }).then(()=>{
     console.log("DB CONNECTED")
 }).catch( ()=>{
