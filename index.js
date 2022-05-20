@@ -25,8 +25,8 @@ mongoose.connect("mongodb+srv://mern:mern@cluster0.q268o.mongodb.net/Ecommerce?r
     useUnifiedTopology:true, 
     useCreateIndex:true,
     
-}).then(()=>{
-    console.log("DB CONNECTED")
+}).then((res)=>{
+    console.log("DB CONNECTED" +    res.connection.host);
 }).catch( ()=>{
     console.log("Not Connected")
 })
@@ -49,11 +49,13 @@ app.use("/api", stripeRoutes);
 app.use("/api", paymentRoutes);
 app.use("/api", razorpayRoutes);
 
+
 //Port
-const port = process.env.PORT || 6969;
+const port = process.env.PORT || 8000;
 
 //Staring Server
 app.listen(port, ()=>{
+    
     console.log(`app is running at ${port}`);
 });
 
