@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npm start index.js"
+    "start": "node index.js"
   },
   "author": "Nipun",
   "license": "ISC",
