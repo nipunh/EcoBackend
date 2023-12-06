@@ -19,21 +19,19 @@ const razorpayRoutes = require("./routes/razorpayRoutes")
 
 
 //DB  Connection
-mongoose.connect("mongodb+srv://mern:mern@cluster0.q268o.mongodb.net/Ecommerce?retryWrites=true&w=majority", {
-    // process.env.DATABASE, {
+mongoose.connect(
+    process.env.DATABASE, {
     useNewUrlParser : true,
     useUnifiedTopology:true, 
     useCreateIndex:true,
     
 }).then((res)=>{
     console.log("DB CONNECTED" +    res.connection.host);
-}).catch( ()=>{
-    console.log("Not Connected")
+}).catch((error)=>{
+    console.log("Not Connected :", error)
 })
 
 
-// 
-// DATABASE="mongodb+srv://mern:mern@cluster0.q268o.mongodb.net/Ecommerce?retryWrites=true&w=majority"
 //Middleware
 app.use(bodyParser.json());
 app.use(cookieParser());
