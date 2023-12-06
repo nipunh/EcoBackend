@@ -72,7 +72,7 @@ exports.signout = (req, res) => {
 
 //protected routes
 exports.isSignedIn = expressJwt({
-  secret: "fuckmyass",
+  secret: "montreal",
   userProperty: "auth"
 });
 
