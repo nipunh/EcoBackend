@@ -70,7 +70,7 @@ exports.signout = (req, res) => {
 
 
 exports.isSignedIn = expressJwt({
-  secret: process.env.secret,
+  secret: process.env.SECRET,
   userProperty: "auth"
 });
 
