@@ -60,8 +60,6 @@ userSchema.virtual("password")
         return this._password
     })
 
-
-
 //Methods of these schema
 userSchema.methods = {
     //Second Method
